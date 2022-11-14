@@ -26,10 +26,10 @@ export class PipelineStack extends cdk.Stack {
       stageName: "Source",
       actions: [
         new GitHubSourceAction({
-          owner: "Gtofig",
+          owner: "allen1128",
           repo: "aws-pipeline",
-          branch: "master",
-          actionName: "Pipeline_Source",
+          branch: "create-pipeline-with-source",
+          actionName: "Pipeline Source",
           oauthToken: SecretValue.secretsManager("github-token"),
           output: sourceOutput,
         }),
