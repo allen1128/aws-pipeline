@@ -29,7 +29,7 @@ export class PipelineStack extends cdk.Stack {
           owner: "allen1128",
           repo: "aws-pipeline",
           branch: "create-pipeline-with-source",
-          actionName: "Pipeline Source",
+          actionName: "Pipeline_Source",
           oauthToken: SecretValue.secretsManager("github-token"),
           output: sourceOutput,
         }),
